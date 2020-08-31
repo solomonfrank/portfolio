@@ -1,0 +1,204 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: open sans, sans-serif;
+  position: relative;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.header {
+  color: #fff;
+  z-index: 100;
+  transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
+}
+main {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header--fixed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.nav-wrapper {
+  display: flex;
+  margin-right: -28px;
+  margin-left: -28px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.nav-left {
+  flex: 0 0 40%;
+  max-width: 50%;
+  text-align: left;
+}
+
+.nav-right {
+  flex: 0 0 60%;
+  max-width: 100%;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+.align-items-center {
+  text-align: center !important;
+}
+
+.header__logo {
+  font-size: 18px;
+  display: inline-block;
+  padding: 25px;
+}
+
+.header__logo a {
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.header__menu {
+  text-align: right;
+  margin: 0;
+}
+.header__menu-item {
+  display: inline-block;
+  padding: 30px 20px;
+}
+
+.header__menu-item a {
+  color: white;
+}
+
+.header__menu-link {
+  transition: padding 0.5s ease-in-out;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  font-weight: 600;
+}
+
+.header__menu-link:hover {
+  color: #ffcb05;
+}
+
+.hero {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(to bottom, #7a19f1, #332179);
+  background-attachment: fixed;
+}
+.hero__inner {
+  position: relative;
+  background-attachment: fixed;
+  padding: 100px 0;
+  z-index: 5;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+}
+.section {
+  padding-bottom: 100px;
+}
+.hero p {
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.hero:before {
+  content: " ";
+  right: 0;
+  top: 0;
+  opacity: 0.7;
+  left: 0;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQwIDMyMCc+PHBhdGggZmlsbD0nIzUwMDBjYScgZmlsbC1vcGFjaXR5PScwLjknIGQ9J00wLDY0TDYwLDU4LjdDMTIwLDUzLDI0MCw0MywzNjAsODBDNDgwLDExNyw2MDAsMjAzLDcyMCwyNTAuN0M4NDAsMjk5LDk2MCwzMDksMTA4MCwzMTQuN0MxMjAwLDMyMCwxMzIwLDMyMCwxMzgwLDMyMEwxNDQwLDMyMEwxNDQwLDBMMTM4MCwwQzEzMjAsMCwxMjAwLDAsMTA4MCwwQzk2MCwwLDg0MCwwLDcyMCwwQzYwMCwwLDQ4MCwwLDM2MCwwQzI0MCwwLDEyMCwwLDYwLDBMMCwwWic+PC9wYXRoPjwvc3ZnPg==);
+}
+
+.hero:after {
+  content: " ";
+  right: 0;
+  bottom: 0;
+  opacity: 0.05;
+  left: 0;
+  height: 230px;
+
+  position: absolute;
+  z-index: 1;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQwIDMyMCc+PHBhdGggZmlsbD0nI2ZmZmZmZicgZmlsbC1vcGFjaXR5PScwLjc1JyBkPSdNMCwzMkw2MCw1My4zQzEyMCw3NSwyNDAsMTE3LDM2MCwxNDRDNDgwLDE3MSw2MDAsMTgxLDcyMCwxNjBDODQwLDEzOSw5NjAsODUsMTA4MCw4MEMxMjAwLDc1LDEzMjAsMTE3LDEzODAsMTM4LjdMMTQ0MCwxNjBMMTQ0MCwzMjBMMTM4MCwzMjBDMTMyMCwzMjAsMTIwMCwzMjAsMTA4MCwzMjBDOTYwLDMyMCw4NDAsMzIwLDcyMCwzMjBDNjAwLDMyMCw0ODAsMzIwLDM2MCwzMjBDMjQwLDMyMCwxMjAsMzIwLDYwLDMyMEwwLDMyMFonPjwvcGF0aD48L3N2Zz4=);
+}
+
+.text-uppercase {
+  font-size: 50px;
+}
+.header--scrolling {
+  position: fixed;
+  background-color: #741ce8;
+  border-bottom: #0000001c 2px solid;
+}
+
+.about {
+  display: flex;
+  padding: 50px 30px;
+}
+.about__section {
+  width: 35%;
+}
+
+.about__image {
+  width: 65%;
+}
+.about__image > figure {
+  width: 100%;
+}
+.about__image img {
+  width: 100%;
+}
