@@ -82,6 +82,31 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <section className="skill__section">
+        <div class="container skill__container">
+          <div className="skill">
+            <div className="skill__design">
+              <h1>I build & design stuff</h1>
+              <p>
+                Open source <br /> projects, web apps <br /> and experimentals.
+              </p>
+              <div className="contact__btn contact__btn--cv">
+                <Link>See My Work</Link>
+              </div>
+            </div>
+            <div className="skill__write">
+              <h1>I write sometimes</h1>
+              <p>
+                About backend technologies
+                <br /> javascript <br /> various implementations
+              </p>
+              <div className="contact__btn contact__btn--cv">
+                <Link>See My Article</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
