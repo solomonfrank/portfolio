@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Dev from "../images/dev.jpg";
+import CashboxImage from "../images/cashboxImage.PNG";
+import MyBlog from "../images/blog.PNG";
+import Monitor from "../images/monitor.PNG";
 
 const HomePage = () => {
   return (
@@ -102,6 +105,54 @@ const HomePage = () => {
               </p>
               <div className="contact__btn contact__btn--cv">
                 <Link>See My Article</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="portfolio__section">
+        <div class="container portfolio__container">
+          <h2>Some Things I've Built</h2>
+          <div className="portfolio">
+            <div className="portfolio__name">
+              <div className="portfolio__name--logo">
+                <figure>
+                  <img src={CashboxImage} />
+                </figure>
+              </div>
+              <div className="portfolio__name--text">
+                <h5>Cashbox App</h5>
+                <Link target="_blank" to="https://app.cashboxng.com">
+                  app.cashboxng.com
+                </Link>
+              </div>
+            </div>
+            <div className="portfolio__name">
+              <div className="portfolio__name--logo">
+                <figure>
+                  <img src={MyBlog} />
+                </figure>
+              </div>
+              <div className="portfolio__name--text">
+                <h5>Portfolio</h5>
+                <Link target="_blank" to="https://app.cashboxng.com">
+                  Rock.dev
+                </Link>
+              </div>
+            </div>
+            <div className="portfolio__name">
+              <div className="portfolio__name--logo">
+                <figure>
+                  <img src={Monitor} />
+                </figure>
+              </div>
+              <div className="portfolio__name--text">
+                <h5>Trans Monitor</h5>
+                <Link target="_blank" to="https://app.cashboxng.com">
+                  {" "}
+                  mint-monitor.netlify.app
+                </Link>
               </div>
             </div>
           </div>
