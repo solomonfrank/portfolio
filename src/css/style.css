@@ -299,3 +299,46 @@ ul {
 .contact__btn--cv {
   float: right;
 }
+
+/* .portfolio__section {
+  background-color: #741ce8;
+} */
+
+.portfolio__container h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background-color: rgb(240, 241, 245);
+  position: relative;
+  top: -20px;
+  margin-left: 300px;
+}
+.portfolio {
+  display: flex;
+  padding: 30px;
+}
+
+.portfolio__name {
+  width: 30%;
+  background-color: rgb(240, 241, 245);
+  min-height: 100px;
+  margin: 10px;
+  border: 1px solid rgba(72, 49, 212, 0.3);
+}
+
+.portfolio__name--text {
+  padding: 20px;
+}
+
+.portfolio__name--text a {
+  color: #741ce8;
+}
+.portfolio__name--logo figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.portfolio__name--logo figure img {
+  width: 100%;
+}
