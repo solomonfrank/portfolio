@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Dev from "../images/dev.jpg";
 
 const HomePage = () => {
@@ -13,10 +14,13 @@ const HomePage = () => {
                   <h1 class="text-uppercase">Rock Enwerem</h1>
                   <p>
                     I'm a full stack developer, who is passionate about building
-                    a highly scalable and performant solution using modern
+                    highly scalable and performant solution using modern
                     technologies. If you're a business seeking a web presence or
                     are looking to hire, contact me.
                   </p>
+                  <div className="contact__btn">
+                    <Link>Get in Touch</Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -27,20 +31,48 @@ const HomePage = () => {
         <div class="container">
           <div className="about">
             <div className="about__section">
-              <h4>Over the Past Year</h4>
+              <h3>Over the Past Year</h3>
               <p>
                 {" "}
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
-                I have solution that allow users to save and be finacially free
+                I graduated from University of Nigeria, with strong analytical
+                and problem solving skill.
               </p>
+              <p>
+                Currently a software engineer at Cashbox Global Service, where I
+                work on varieties of features that gives our users a better
+                experience and also building internal tools
+              </p>
+              <p>
+                As an Engineer at Cashbox, I have built:
+                <ul className="about__section--ul">
+                  <li>
+                    Cashbox Clique: This allows users to save with their
+                    families, friends, and other users.
+                  </li>
+                  <li>
+                    Transaction and Transfer: This feature allows users to
+                    transfer their money from one plan to another and also to
+                    other users.
+                  </li>
+                  <li>
+                    Chron Job: Charging of user cards on recurring basis using
+                    hangfire
+                  </li>
+                </ul>
+              </p>
+              <p>
+                Here are a few technologies I've been working with recently:
+              </p>
+              <ul className="about__section--ul about__section--grid">
+                <li> Javascript(ES6+)</li>
+                <li> ReactJs</li>
+                <li> NodeJS</li>
+                <li> Asp.netCore</li>
+                <li> Entity Framework</li>
+              </ul>
+              <div className="contact__btn contact__btn--cv">
+                <Link>Download CV</Link>
+              </div>
             </div>
             <div className="about__image">
               <figure>

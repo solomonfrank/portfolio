@@ -85,12 +85,6 @@ a {
   font-size: 19px;
   font-weight: bold;
 }
-ul {
-  text-decoration: none;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 
 .header__menu {
   text-align: right;
@@ -145,6 +139,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .hero:before {
@@ -190,15 +185,77 @@ ul {
   padding: 50px 30px;
 }
 .about__section {
-  width: 35%;
+  width: 40%;
+}
+.about__section h3 {
+  font-size: 30px;
+  color: #741ce8;
 }
 
+.about__section p {
+  height: 1.6;
+  font-size: 19px;
+}
 .about__image {
-  width: 65%;
+  width: 60%;
 }
 .about__image > figure {
   width: 100%;
 }
 .about__image img {
   width: 100%;
+}
+
+.contact__btn {
+  padding: 20px;
+}
+
+.contact__btn a {
+  border: 1px solid #741ce8;
+
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  margin-top: 90px;
+}
+
+ul {
+  list-style: none;
+}
+.about__section--ul {
+  padding: 0;
+  margin-bottom: 50px;
+}
+.about__section--ul:last-child {
+  margin-bottom: 50px;
+}
+
+.about__section--ul li::before {
+  content: "▹";
+
+  left: 20px;
+  color: #741ce8;
+  font-size: 14px;
+  line-height: 12px;
+  margin-right: 20px;
+}
+
+.contact__btn--cv a {
+  color: #741ce8;
+}
+.about__section--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
 }
