@@ -46,17 +46,35 @@ const HomePage = () => {
                 experience and also building internal tools
               </p>
               <p>
-                As an Engineer at Cashbox, I have built:
+                <span style={{ fontWeight: "bold", fontSize: "19px" }}>
+                  As an Engineer at Cashbox, I have built:
+                </span>
                 <ul className="about__section--ul">
                   <li>
-                    Cashbox Clique: This allows users to save with their
-                    families, friends, and other users.
+                    Built a queue driven system that allow us to replay
+                    different task
+                  </li>
+
+                  <li>
+                    Built in-house accounting ledgers that allow us to keep
+                    track of all transaction.
                   </li>
                   <li>
-                    Transaction and Transfer: This feature allows users to
-                    transfer their money from one plan to another and also to
-                    other users.
+                    Optimization of long server running query to a more
+                    perfomant query using store procedures
                   </li>
+                  <li>
+                    implementations of trigger on different tables on the
+                    database
+                  </li>
+                  <li>
+                    Implementation of APIs for core frontend functionality
+                  </li>
+                  <li>
+                    Writing efficient SQL queries for independent features
+                  </li>
+
+                  <li>Reuseable react component development</li>
                   <li>
                     Chron Job: Charging of user cards on recurring basis using
                     hangfire
@@ -71,7 +89,11 @@ const HomePage = () => {
                 <li> ReactJs</li>
                 <li> NodeJS</li>
                 <li> Asp.netCore</li>
+                <li> Asp.netCore Mvc</li>
+                <li> Asp.netCore Web API</li>
+                <li> Asp.netCore Razor Pages</li>
                 <li> Entity Framework</li>
+                <li> Hangfire</li>
               </ul>
               <div className="contact__btn contact__btn--cv">
                 <Link>Download CV</Link>
@@ -90,11 +112,14 @@ const HomePage = () => {
           <div className="skill">
             <div className="skill__design">
               <h1>I build & design stuff</h1>
+
               <p>
                 Open source <br /> projects, web apps <br /> and experimentals.
               </p>
-              <div className="contact__btn contact__btn--cv">
-                <Link>See My Work</Link>
+              <div className="contact__btn contact__btn--cv btn-skill">
+                <Link to="https://medium.com/@solomonrock13/nodejs-authentication-using-jwt-and-refresh-token-and-sequelize-and-postgres-from-scratch-2031bd9a815e">
+                  See My Work
+                </Link>
               </div>
             </div>
             <div className="skill__write">
@@ -103,8 +128,10 @@ const HomePage = () => {
                 About backend technologies
                 <br /> javascript <br /> various implementations
               </p>
-              <div className="contact__btn contact__btn--cv">
-                <Link>See My Article</Link>
+              <div className="contact__btn contact__btn--cv btn-skill">
+                <a href="https://medium.com/@solomonrock13/nodejs-authentication-using-jwt-and-refresh-token-and-sequelize-and-postgres-from-scratch-2031bd9a815e">
+                  See My Article
+                </a>
               </div>
             </div>
           </div>
