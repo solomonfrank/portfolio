@@ -4,6 +4,7 @@ import Dev from "../images/dev.jpg";
 import CashboxImage from "../images/cashboxImage.PNG";
 import MyBlog from "../images/blog.PNG";
 import Monitor from "../images/monitor.PNG";
+import GitClone from "../images/githubclone.PNG";
 
 const HomePage = () => {
   return (
@@ -166,6 +167,19 @@ const HomePage = () => {
                 <Link target="_blank" to="https://app.cashboxng.com">
                   Rock.dev
                 </Link>
+              </div>
+            </div>
+            <div className="portfolio__name">
+              <div className="portfolio__name--logo">
+                <figure>
+                  <img src={GitClone} />
+                </figure>
+              </div>
+              <div className="portfolio__name--text">
+                <h5>Github Clone</h5>
+                <a target="_blank" href="https://github-clone-example.netlify.app/">
+                 Responsive Github Page
+                </a>
               </div>
             </div>
             <div className="portfolio__name">
